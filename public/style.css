@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body{
+  background-color: #653C08;
+  padding: 3rem;
+}
+.home-page {
+  display: flex;
+  height: 100vh;
+  background-color: #fef2e7;
+  border-radius: 65px 0 0 65px;
+}
+.img-part {
+  border: black 1px solid;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  background-color: #fef2e7;
+  background: #fff
+    url(https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80)
+    center center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 65px 0 0 65px;
+
+}
+.input-form {
+  background-color: #fef2e7;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  height: 100%;
+  border-radius: 0 65px 65px 0;
+}
+
+.input{
+  margin: 3rem 0 0 4rem;
+  height: 100vh;
+}
+.h2-title{
+  color: #9A5222;
+  padding-right:2rem ;
+  margin-bottom: 3rem;
+}
+.label-name{
+  color: #9A5222;
+  padding-right:4rem ;
+  font-size: 18px;
+}
+input[type='text']{
+  border: white;
+  padding: 1rem;
+  width: 60%;
+  border-radius: 8px;
+}
+
+.input-field {
+  font-size: 1rem;
+  padding: 4px;
+  outline: none;
+  margin-bottom: 2rem;
+}
+.input-field-message{
+  width: 320px;
+  height: 100px;
+}
+
+input[type='radio']{
+  color:#fbefe1 ;
+  background-color: black;
+}
+
+.radio-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.radio-div-child{
+  width: 35%;
+}
+.input-field-message{
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.label-name-message{
+  position: relative;
+  top: -50px;
+}
+.btn-submit{
+  display: block;
+  height: auto;
+  color: white;
+  background-color: #947045;
+  font-weight: 900;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin-left: 12rem;
+  padding:1rem 2rem 1rem 2rem;
+}
+.radio-btn{
+  color: #DCA463;
+
+}
