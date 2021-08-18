@@ -1,13 +1,19 @@
 const express = require('express');
-const postDataQuery = require('../database/quires/postData');
+const { getDataQuery, postDataQuery } = require('../database/quires');
 
 const { error404, serverError } = require('../controllers');
 
 const router = express.Router();
 
+router.get('/photographer', (req, res) => {
+  getDataQuery()
+    .then(result => res.json(result.rows))
+    .catch((err) => res.status(500).json({ msg: 'Internal Server Error' }));
+});
+
 router.post('/costumer-info', (req, res) => {
   postDataQuery(req.body)
-    .then(result => res.redirect('/'))
+    .then((result) => res.redirect('/'))
     .catch((err) => console.log(err));
 });
 
