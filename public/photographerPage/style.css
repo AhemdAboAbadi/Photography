@@ -94,3 +94,42 @@ li {
 .col-6 {
   flex-basis: 10%;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .logo{
+    width:20%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  .nav-list {
+    width: 80%;
+  }
+  .nav-list a{
+    font-size: 16px;
+  }
+  .customers-container {
+    width: 100%;
+    margin:0;
+  }
+  h2{
+    font-size: 18px;
+  }
+  .table-header {
+    display: none;
+  }
+  li {
+    display: block;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .col {
+    display: flex;
+    padding: 10px 0;
+  }
+  .col:before {
+    color: #6c7a89;
+    flex-basis: 50%;
+    text-align: left;
+  }
+}
