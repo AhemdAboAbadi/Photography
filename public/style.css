@@ -5,8 +5,8 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
-body{
-  background-color: #653C08;
+body {
+  background-color: #653c08;
   padding: 3rem;
 }
 .home-page {
@@ -23,14 +23,13 @@ body{
   width: 100%;
   height: 100hv;
   border-radius: 33px 0 0 33px;
-
 }
 .input-form {
   width: 100%;
   border-radius: 0 33px 33px 0;
 }
 
-.input{
+.input {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -38,20 +37,20 @@ body{
   align-items: center;
   padding: 30px;
 }
-.h2-title{
-  color: #9A5222;
-  padding-right:2rem ;
+.h2-title {
+  color: #9a5222;
+  padding-right: 2rem;
   margin-bottom: 3rem;
 }
-.label-name{
-  color: #9A5222;
+.label-name {
+  color: #9a5222;
   /* padding-right: 4rem; */
   font-size: 18px;
   display: inline-block;
   width: 135px;
   text-align: left;
 }
-input[type='text']{
+input[type='text'] {
   border: white;
   padding: 1rem;
   width: 100%;
@@ -68,11 +67,10 @@ input[type='text']{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%; 
+  width: 100%;
   padding-bottom: 1.5rem;
-
 }
-.input-field-message{
+.input-field-message {
   width: 100%;
   height: 79px;
   resize: none;
@@ -81,20 +79,20 @@ input[type='text']{
   border: none;
 }
 
-input[type='radio']{
-  color:#fbefe1 ;
+input[type='radio'] {
+  color: #fbefe1;
   background-color: black;
 }
 
-.radio-div{
+.radio-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-.radio-div-child{
+.radio-div-child {
   width: 35%;
 }
-.btn-submit{
+.btn-submit {
   display: block;
   height: auto;
   color: white;
@@ -104,32 +102,32 @@ input[type='radio']{
   border-radius: 10px;
   margin-top: 3rem;
   margin-left: 12rem;
-  padding:1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
 }
-.radio-btn{
-  color: #DCA463;
+.radio-btn {
+  color: #dca463;
 }
 
-@media (max-width : 820px) {
+@media (max-width: 820px) {
   .input > div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%; 
+    width: 100%;
     padding-bottom: 1.5rem;
   }
-  .btn-submit{
+  .btn-submit {
     margin: auto 0;
   }
 }
-@media (max-width : 580px) {
-  .img-part{
+@media (max-width: 580px) {
+  .img-part {
     display: none;
   }
-  .radio-div{
+  .radio-div {
     justify-content: space-around;
   }
-  .btn-submit{
+  .btn-submit {
     margin: auto 0;
   }
 }
