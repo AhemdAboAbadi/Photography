@@ -3,7 +3,7 @@ require('env2')('.env');
 const { join } = require('path');
 const express = require('express');
 
-const router = require('./controllers');
+const router = require('./router');
 
 const app = express();
 
