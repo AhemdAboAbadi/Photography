@@ -3,7 +3,7 @@ BEGIN;
 DROP TABLE IF EXISTS customers, photographer CASCADE;
 
 CREATE TABLE IF NOT EXISTS customers(
-    id SERIAL PRIMARY KEY,
+    cus_id SERIAL PRIMARY KEY,
     cus_name VARCHAR(100) NOT NULL,
     email VARCHAR(200) NOT NULL,
     phone TEXT NOT NULL,
@@ -21,7 +21,8 @@ INSERT INTO customers (cus_name, email, phone, city, country, purpose) VALUES
 CREATE TABLE IF NOT EXISTS photographer(
     id SERIAL PRIMARY KEY,
     photo_name VARCHAR(100) NOT NULL,
-    cus_id INTEGER FOREIGN KEY REFERENCES customers(id)
+    cus_id INT,
+    FOREIGN KEY (cus_id) REFERENCES customers(cus_id)
 );
 
 INSERT INTO photographer (photo_name) VALUES ('Ahmed');
