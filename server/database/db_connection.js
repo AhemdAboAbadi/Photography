@@ -25,7 +25,9 @@ console.log(dburl);
 
 const options = {
   connectionString: dburl,
-  ssl: true,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 };
 
 module.exports = new Pool(options);
