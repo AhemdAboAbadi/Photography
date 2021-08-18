@@ -1,12 +1,12 @@
 BEGIN;
 
-DROP TABLE IF NOT EXISTS customers, photographer CASCADE;
+DROP TABLE IF EXISTS customers, photographer CASCADE;
 
 CREATE TABLE IF NOT EXISTS customers(
     id SERIAL PRIMARY KEY,
     cus_name VARCHAR(100) NOT NULL,
     email VARCHAR(200) NOT NULL,
-    phone INTEGER NOT NULL,
+    phone TEXT NOT NULL,
     city VARCHAR(100) NOT NULL,
     country VARCHAR(100) NOT NULL,
     purpose VARCHAR(100) NOT NULL,
