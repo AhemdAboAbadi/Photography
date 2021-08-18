@@ -31,8 +31,9 @@
         <form class="input" action="/costumer-info" method="POST">
           <h2 class="h2-title">WE MAKE PHOTOGRAPHS</h2>
           <div>
-            <label class="label-name">Name</label>
+            <label for ="name" class="label-name">Name</label>
             <input
+              name="name"
               class="input-field"
               id="name-id"
               type="text"
@@ -40,8 +41,9 @@
             />
           </div>
           <div>
-            <label class="label-name">Email</label>
+            <label for="email" class="label-name">Email</label>
             <input
+              name="email"
               class="input-field"
               id="email-id"
               type="text"
@@ -49,8 +51,9 @@
             />
           </div>
           <div>
-            <label class="label-name">Phone</label>
+            <label for="phone" class="label-name">Phone</label>
             <input
+              name="phone"
               class="input-field"
               id="phone-id"
               type="text"
@@ -58,8 +61,9 @@
             />
           </div>
           <div>
-            <label class="label-name">City</label>
+            <label for="city" class="label-name">City</label>
             <input
+              name="city"
               class="input-field"
               id="city-id"
               type="text"
@@ -67,8 +71,9 @@
             />
           </div>
           <div>
-            <label class="label-name">Country</label>
+            <label class="label-name" for="country">Country</label>
             <input
+              name="country"
               class="input-field"
               id="country-id"
               type="text"
@@ -80,34 +85,35 @@
             <label class="label-name">Purpose</label>
             <div class="radio-div">
               <div class="radio-div-child">
-                <input type="radio" value="portfolio" name="portfolio" />
-                <label class="radio-btn" for="portfolio"> portfolio</label>
+                <input type="radio" value="portfolio" name="purpose" />
+                <label class="radio-btn" for="purpose"> portfolio</label>
               </div>
               <div class="radio-div-child">
-                <input type="radio" value="Wedding" name="Wedding" />
-                <label class="radio-btn" for="Wedding"> Wedding</label>
+                <input type="radio" value="Wedding" name="purpose" />
+                <label class="radio-btn" for="purpose"> Wedding</label>
               </div>
               <div class="radio-div-child">
-                <input type="radio" value="Modeling" name="Modeling" />
-                <label class="radio-btn" for="Modeling"> Modeling</label>
+                <input type="radio" value="Modeling" name="purpose" />
+                <label class="radio-btn" for="purpose"> Modeling</label>
               </div>
               <div class="radio-div-child">
-                <input type="radio" value="Business" name="Business" />
-                <label class="radio-btn" for="Business"> Business</label>
+                <input type="radio" value="Business" name="purpose" />
+                <label class="radio-btn" for="purpose"> Business</label>
               </div>
               <div class="radio-div-child">
-                <input type="radio" value="Commercial" name="Commercial" />
-                <label class="radio-btn" for="Commercial"> Commercial</label>
+                <input type="radio" value="Commercial" name="purpose" />
+                <label class="radio-btn" for="purpose"> Commercial</label>
               </div>
               <div class="radio-div-child">
-                <input type="radio" value="Other" name="Other" />
-                <label class="radio-btn" for="Other">Other</label>
+                <input type="radio" value="Other" name="purpose" />
+                <label class="radio-btn" for="purpose">Other</label>
               </div>
             </div>
           </div>
           <div>
             <label class="label-name label-name-message">Message</label>
             <textarea
+              name="message"
               class="input-field-message"
               id="message-id"
               placeholder="Enter your Message @_@"

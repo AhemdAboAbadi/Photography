@@ -6,9 +6,9 @@ const { error404, serverError } = require('../controllers');
 const router = express.Router();
 
 router.post('/costumer-info', (req, res) => {
-  postDataQuery()
-    .then((result) => res.json(result.rows))
-    .catch(() => res.status(500).json({ msg: 'sth wrong !' }));
+  postDataQuery(req.body)
+    .then(result => res.redirect('/'))
+    .catch((err) => console.log(err));
 });
 
 router.use(error404);
