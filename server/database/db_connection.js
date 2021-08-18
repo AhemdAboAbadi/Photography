@@ -21,8 +21,6 @@ switch (NODE_ENV) {
     throw new Error('No Database is founded !');
 }
 
-console.log(dburl);
-
 const options = {
   connectionString: dburl,
   ssl: {
