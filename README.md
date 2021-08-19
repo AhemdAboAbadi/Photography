@@ -1,4 +1,4 @@
-# Photography# Photography
+# Photography
 
 ## Live Demo :tv: [LIVE](https://photography01.herokuapp.com/)
 
@@ -10,6 +10,8 @@
 ## Description :bulb:
 Our website helps the photographer to coordinate the dates of photo sessions with clients 
 
+## Database Shema:
+![](https://i.imgur.com/hkhyshc.jpg)
 
 ## User Stories :book:
 As a user:
