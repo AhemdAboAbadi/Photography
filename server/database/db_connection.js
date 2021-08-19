@@ -7,22 +7,22 @@ const {
 
 let dburl = '';
 
-switch (NODE_ENV) {
-  case 'production':
-    dburl = DATABASE_URL;
-    break;
-  case 'development':
-    dburl = DEV_DB_URL;
-    break;
-  case 'test':
-    dburl = TEST_DB_URL;
-    break;
-  default:
-    throw new Error('No Database is founded !');
-}
+// switch (NODE_ENV) {
+//   case 'production':
+//     dburl = DATABASE_URL;
+//     break;
+//   case 'development':
+//     dburl = DEV_DB_URL;
+//     break;
+//   case 'test':
+//     dburl = TEST_DB_URL;
+//     break;
+//   default:
+//     throw new Error('No Database is founded !');
+// }
 
 const options = {
-  connectionString: dburl,
+  connectionString: DATABASE_URL,
   ssl: {
     rejectUnauthorized: false,
   },
