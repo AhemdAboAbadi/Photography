@@ -1,6 +1,6 @@
 const { join } = require('path');
 
-const error404 = (req, res) => {
+const error404 = (req, res, next) => {
   res
     .status(404)
     .sendFile(join(__dirname, '..', '..', 'public', 'error', '404.html'));
